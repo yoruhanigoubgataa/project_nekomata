@@ -104,6 +104,11 @@ public:
         m_renderingCreateInfo.depthAttachmentFormat = format;
         return *this;
     }
+    [[nodiscard]] constexpr auto setTessellationPatchControlPoints(u32 patchControlPoints) noexcept -> VulkanGraphicsPipelineBuilder& {
+        m_tessellationState = vk::PipelineTessellationStateCreateInfo{}
+            .setPatchControlPoints(patchControlPoints);
+        return *this;
+    }
     [[nodiscard]] constexpr auto build() -> VulkanGraphicsPipeline {
         auto viewportState = vk::PipelineViewportStateCreateInfo{}
             .setViewportCount(1)
@@ -118,6 +123,7 @@ public:
         auto dynamicStateList = std::array<vk::DynamicState, 2>{vk::DynamicState::eViewport, vk::DynamicState::eScissor};
         auto dynamicState = vk::PipelineDynamicStateCreateInfo{}
             .setDynamicStates(dynamicStateList);
+
         m_renderingCreateInfo = m_renderingCreateInfo.setColorAttachmentFormats(m_renderingColorAttachmentFormats);
 
         auto stagesRaw = m_shaderStages
@@ -135,6 +141,10 @@ public:
             .setPDepthStencilState(&m_depthStencilState)
             .setPDynamicState(&dynamicState)
             .setLayout(m_pipelineLayout);
+
+        if (m_tessellationState) {
+            pipelineInfo.pTessellationState = &m_tessellationState.value();
+        }
 
         auto sc = vk::StructureChain<vk::GraphicsPipelineCreateInfo, vk::PipelineRenderingCreateInfo, vk::PipelineCreateFlags2CreateInfo>{
             pipelineInfo,
@@ -198,6 +208,7 @@ private:
     vk::PipelineMultisampleStateCreateInfo m_multisampleState = {};
     vk::PipelineDepthStencilStateCreateInfo m_depthStencilState = {};
     vk::PipelineRenderingCreateInfo m_renderingCreateInfo = {};
+    std::optional<vk::PipelineTessellationStateCreateInfo> m_tessellationState = std::nullopt;
     std::vector<vk::PipelineColorBlendAttachmentState> m_renderingColorAttachmentBlendStates;
     std::vector<vk::Format> m_renderingColorAttachmentFormats;
 
