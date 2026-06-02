@@ -23,6 +23,7 @@ struct MRThreadsSharedDataLeaf {
     std::vector<u32> m_textureToImageShaderIndexSnapshot;
     std::vector<u32> m_textureToSamplerShaderIndexSnapshot;
     std::vector<ui::UiDrawCmd> m_uiDrawCmds;
+    bool m_hasValidFrame = false;
 };
 
 class MRThreadsSharedData {

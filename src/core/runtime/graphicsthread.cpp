@@ -50,6 +50,8 @@ auto RenderThread::runMainLoop() -> void {
 
 
 auto RenderThread::loop() -> void {
+    if (!m_mrSharedData->m_leafs.getSecondary().m_hasValidFrame) return;
+
     auto currentTime = std::chrono::high_resolution_clock::now();
     auto deltaTime = std::chrono::duration<float>(currentTime - m_lastFrameTime).count();
     m_lastFrameTime = currentTime;

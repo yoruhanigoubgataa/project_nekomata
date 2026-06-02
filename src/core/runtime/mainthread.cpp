@@ -107,6 +107,8 @@ auto MainThread::loop(float dt) -> void {
     m_uiRoot->boundsEnd = logicalSizeFloat;
     m_uiRoot->buildDrawCmds(m_mrSharedData->m_leafs.getPrimary().m_uiDrawCmds, logicalSizeFloat, Vector2f(0.0f), logicalSizeFloat);
 
+    m_mrSharedData->m_leafs.getPrimary().m_hasValidFrame = true;
+
     m_frameIndex++;
 }
 
