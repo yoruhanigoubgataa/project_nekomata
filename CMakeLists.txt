@@ -163,7 +163,9 @@ target_precompile_headers(
         nekomata2
         PRIVATE
         ${PRECOMPILE_HEADERS}
+        <vector> <print> <memory>
 )
+set_target_properties(nekomata2 PROPERTIES UNITY_BUILD ON)
 target_compile_options(
         nekomata2 PRIVATE
 
