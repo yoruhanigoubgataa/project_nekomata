@@ -98,19 +98,6 @@ target_sources(VulkanModule
         ${Vulkan_INCLUDE_DIRS}/vulkan/vulkan.cppm
 )
 
-add_library(VmaModule)
-target_compile_definitions(
-        VmaModule PRIVATE
-        VULKAN_HPP_DISPATCH_LOADER_DYNAMIC=1
-        VMA_STATIC_VULKAN_FUNCTIONS=0
-        VMA_DYNAMIC_VULKAN_FUNCTIONS=0
-)
-target_link_libraries(VmaModule PRIVATE VulkanModule)
-target_include_directories(VmaModule PUBLIC ${vmahpp_SOURCE_DIR})
-target_sources(VmaModule PUBLIC
-        FILE_SET CXX_MODULES
-        FILES ${vmahpp_SOURCE_DIR}/vk_mem_alloc.cppm)
-
 # ----------------------------------------------------------------------------------------------------------------------
 #     Slang Setup
 
@@ -198,7 +185,7 @@ target_link_libraries(
         PRIVATE
         ${TCMALLOC_LIB}
         VulkanModule
-        VmaModule
+        VulkanMemoryAllocator-Hpp::VulkanMemoryAllocator-Hpp
         Freetype::Freetype
         SDL3::SDL3
         ktx
