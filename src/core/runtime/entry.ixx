@@ -1,6 +1,6 @@
-export module nekomata2.core.runtime.entry;
+export module nekomata2:core.runtime.entry;
 import std;
-import nekomata2.core.ecs;
+import :core.ecs;
 
 export namespace nekomata2 {
 

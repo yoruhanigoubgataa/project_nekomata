@@ -1,4 +1,5 @@
-module nekomata2.graphics.cmd_alloc;
+module nekomata2;
+import :graphics.cmd_alloc;
 
 namespace nekomata2::cmdalloc {
 

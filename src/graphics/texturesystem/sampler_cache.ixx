@@ -1,10 +1,10 @@
 module;
 #include <xxhash.h>
-export module nekomata2.graphics.texturesystem.sampler_cache;
+export module nekomata2:graphics.texturesystem.sampler_cache;
 import std;
 import vulkan;
-import nekomata2.core.platform.int_def;
-import nekomata2.graphics.vulkan.vk_sampler;
+import :core.platform.int_def;
+import :graphics.vulkan.vk_sampler;
 
 export namespace nekomata2::graphics::texturesystem {
 

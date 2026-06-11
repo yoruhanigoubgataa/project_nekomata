@@ -1,4 +1,5 @@
-module nekomata2.graphics.vulkan.vk_queue_family_swizzling;
+module nekomata2;
+import :graphics.vulkan.vk_queue_family_swizzling;
 
 namespace nekomata2 {
 

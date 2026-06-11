@@ -1,6 +1,6 @@
-export module nekomata2.core.ecs.world.camera;
+export module nekomata2:core.ecs.world.camera;
 import std;
-import nekomata2.core.math;
+import :core.math;
 
 using namespace nekomata2::math;
 

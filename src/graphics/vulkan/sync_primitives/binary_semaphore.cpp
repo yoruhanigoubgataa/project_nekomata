@@ -1,5 +1,5 @@
-module nekomata2.graphics.vulkan.sync_primitives.binary_semaphore;
-import nekomata2.graphics.vulkan.context;
+module nekomata2;
+import :graphics.vulkan.context;
 
 namespace nekomata2 {
 

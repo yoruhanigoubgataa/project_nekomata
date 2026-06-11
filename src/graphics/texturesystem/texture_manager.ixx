@@ -1,17 +1,16 @@
-export module nekomata2.graphics.texturesystem.texture_manager;
+export module nekomata2:graphics.texturesystem.texture_manager;
 import std;
 import vulkan;
-#include "core/containers/atomic_bitmap_index_allocator.ixx"
-#include "core/containers/freelist_pool.ixx"
-#include "graphics/srt/shader_resource_table.ixx"
-#include "sampler_cache.ixx"
-#include "texture_to_shader_index_table.ixx"
+import :core.platform.int_def;
+import :graphics.vulkan.vk_image;
+import :graphics.srt.shader_resource_table;
+import :core.containers.freelist_pool;
+import :graphics.texturesystem.sampler_cache;
+import :graphics.texturesystem.texture_to_shader_index_table;
 
 export namespace nekomata2::graphics::texturesystem {
 
-class TextureManager;
-
-inline TextureManager* g_textureManager = nullptr;
+inline class TextureManager* g_textureManager = nullptr;
 
 struct Texture {
     u32 index = 0;
@@ -27,7 +26,6 @@ public:
 private:
     VulkanImage m_image = nullptr;
 
-    friend class TextureManager;
     auto setImage(VulkanImage&& image) -> void { m_image = std::move(image); }
 };
 

@@ -1,14 +1,15 @@
 module;
 #include <SDL3/SDL_events.h>
-module nekomata2.core.runtime.mainthread;
+module nekomata2;
 import vulkan;
-import nekomata2.core.log;
-import nekomata2.graphics.cmd_alloc;
-import nekomata2.core.ui.components.ui_rect;
-import nekomata2.core.ui.components.ui_texture;
-import nekomata2.core.ecs.world.renderable;
-import nekomata2.core.ecs.world.transform;
-import nekomata2.core.ecs.world.camera;
+import :core.log;
+import :graphics.cmd_alloc;
+import :core.ui.components.ui_rect;
+import :core.ui.components.ui_texture;
+import :core.ecs.world.renderable;
+import :core.ecs.world.transform;
+import :core.ecs.world.camera;
+import :core.runtime.mainthread;
 
 namespace nekomata2 {
 

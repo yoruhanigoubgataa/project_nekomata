@@ -1,5 +1,5 @@
-export module nekomata2.core.math.raddeg;
-import nekomata2.core.math.consts;
+export module nekomata2:core.math.raddeg;
+import :core.math.consts;
 
 export namespace nekomata2::math {
 

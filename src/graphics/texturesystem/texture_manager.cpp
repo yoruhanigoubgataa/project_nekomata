@@ -2,16 +2,17 @@ module;
 #include <ktx.h>
 #include <ktxvulkan.h>
 #include <cstring>
-module nekomata2.graphics.texturesystem.texture_manager;
+module nekomata2;
 import vk_mem_alloc;
-import nekomata2.core.platform.assert;
-import nekomata2.core.log;
-import nekomata2.graphics.cmd_alloc;
-import nekomata2.graphics.vulkan.vk_queue_family_swizzling;
-import nekomata2.graphics.vulkan.vk_buffer;
-import nekomata2.graphics.vulkan.vk_commands_barriers;
-import nekomata2.graphics.srt.bindless_descriptor_set_srt;
-import nekomata2.graphics.vulkan.context;
+import :core.platform.assert;
+import :core.log;
+import :graphics.cmd_alloc;
+import :graphics.vulkan.vk_queue_family_swizzling;
+import :graphics.vulkan.vk_buffer;
+import :graphics.vulkan.vk_commands_barriers;
+import :graphics.srt.bindless_descriptor_set_srt;
+import :graphics.vulkan.context;
+import :graphics.texturesystem.texture_manager;
 
 namespace nekomata2::graphics::texturesystem {
 

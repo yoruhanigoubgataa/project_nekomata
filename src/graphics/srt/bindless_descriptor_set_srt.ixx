@@ -1,16 +1,16 @@
-export module nekomata2.graphics.srt.bindless_descriptor_set_srt;
+export module nekomata2:graphics.srt.bindless_descriptor_set_srt;
 import std;
 import vulkan;
-import nekomata2.core.platform.int_def;
-import nekomata2.graphics.srt.shader_resource_table;
-import nekomata2.graphics.vulkan.vk_descriptor_pool;
-import nekomata2.graphics.vulkan.vk_descriptor_set_layout;
-import nekomata2.graphics.vulkan.vk_descriptor_set;
-import nekomata2.graphics.vulkan.vk_commands;
-import nekomata2.graphics.vulkan.vk_image;
-import nekomata2.graphics.vulkan.vk_sampler;
-import nekomata2.graphics.vulkan.vk_pipeline_layout;
-import nekomata2.core.containers.abia;
+import :core.platform.int_def;
+import :graphics.srt.shader_resource_table;
+import :graphics.vulkan.vk_descriptor_pool;
+import :graphics.vulkan.vk_descriptor_set_layout;
+import :graphics.vulkan.vk_descriptor_set;
+import :graphics.vulkan.vk_commands;
+import :graphics.vulkan.vk_image;
+import :graphics.vulkan.vk_sampler;
+import :graphics.vulkan.vk_pipeline_layout;
+import :core.containers.abia;
 
 export namespace nekomata2::graphics::srt {
 

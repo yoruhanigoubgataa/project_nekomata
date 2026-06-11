@@ -1,7 +1,8 @@
-export module nekomata2.core.math.base_matrix;
+export module nekomata2:core.math.base_matrix;
 import std;
-import nekomata2.core.math.consts;
-import nekomata2.core.platform.int_def;
+import :core.platform.assert;
+import :core.math.consts;
+import :core.platform.int_def;
 
 export namespace nekomata2::math {
 
@@ -174,7 +175,7 @@ public:
     }
 
     Matrix(std::initializer_list<T> ilist) {
-        assert(ilist.size() == NCols * NRows);
+        debug_assert(ilist.size() == NCols * NRows, "The initializer list must have the same size as the matrix.");
 
         auto it = ilist.begin();
         for (usize row = 0; row < NRows; row++) {

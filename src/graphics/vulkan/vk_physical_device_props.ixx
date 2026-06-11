@@ -1,9 +1,9 @@
-export module nekomata2.graphics.vulkan.vk_physical_device_props;
+export module nekomata2:graphics.vulkan.vk_physical_device_props;
 import std;
 import vulkan;
 import vk_mem_alloc;
-import nekomata2.graphics.vulkan.vk_queue_family_swizzling;
-import nekomata2.core.platform.int_def;
+import :graphics.vulkan.vk_queue_family_swizzling;
+import :core.platform.int_def;
 
 export namespace nekomata2 {
 

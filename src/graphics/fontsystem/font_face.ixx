@@ -1,5 +1,5 @@
-export module nekomata2.graphics.fontsystem.font_face;
-import nekomata2.core.platform.int_def;
+export module nekomata2:graphics.fontsystem.font_face;
+import :core.platform.int_def;
 
 export namespace nekomata2::graphics::fonts {
 

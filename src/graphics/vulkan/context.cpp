@@ -1,9 +1,9 @@
-module nekomata2.graphics.vulkan.context;
-import nekomata2.core.log;
-import nekomata2.graphics.vulkan.deletion_queue;
-import nekomata2.graphics.vulkan.vk_queue;
-#include "shadercache/shadercache.ixx"
-import nekomata2.core.platform.assert;
+module nekomata2;
+import :core.log;
+import :graphics.vulkan.deletion_queue;
+import :graphics.vulkan.vk_queue;
+import :core.platform.assert;
+import :graphics.vulkan.shadercache;
 
 namespace nekomata2 {
 

@@ -1,9 +1,9 @@
-export module nekomata2.graphics.vulkan.shadercache;
+export module nekomata2:graphics.vulkan.shadercache;
 import std;
 import vulkan;
-import nekomata2.core.platform.int_def;
-import nekomata2.core.overloaded;
-import nekomata2.graphics.vulkan.shadercache.pipeline_binary_frontend;
+import :core.platform.int_def;
+import :core.overloaded;
+import :graphics.vulkan.shadercache.pipeline_binary_frontend;
 
 export namespace nekomata2 {
 

@@ -1,8 +1,9 @@
-module nekomata2.core.runtime.graphicsthread;
-import nekomata2.core.log;
-import nekomata2.graphics.cmd_alloc;
-import nekomata2.graphics.vulkan.context;
-import nekomata2.graphics.meshsystem.mesh_asset_storage;
+module nekomata2;
+import :core.log;
+import :graphics.cmd_alloc;
+import :graphics.vulkan.context;
+import :graphics.meshsystem.mesh_asset_storage;
+import :core.runtime.graphicsthread;
 
 namespace nekomata2 {
 

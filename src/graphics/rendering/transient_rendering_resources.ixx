@@ -1,6 +1,6 @@
-export module nekomata2.graphics.rendering.transient_rendering_resources;
+export module nekomata2:graphics.rendering.transient_rendering_resources;
 import vulkan;
-import nekomata2.graphics.vulkan.vk_image;
+import :graphics.vulkan.vk_image;
 
 export namespace nekomata2::graphics {
 

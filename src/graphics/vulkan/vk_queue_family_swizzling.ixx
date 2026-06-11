@@ -1,6 +1,6 @@
-export module nekomata2.graphics.vulkan.vk_queue_family_swizzling;
+export module nekomata2:graphics.vulkan.vk_queue_family_swizzling;
 import std;
-import nekomata2.core.platform.int_def;
+import :core.platform.int_def;
 
 export namespace nekomata2 {
 

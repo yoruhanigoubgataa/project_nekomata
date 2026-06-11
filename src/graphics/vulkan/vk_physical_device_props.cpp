@@ -1,4 +1,8 @@
-module nekomata2.graphics.vulkan.vk_physical_device_props;
+module nekomata2;
+import std;
+import vulkan;
+import vk_mem_alloc;
+import :graphics.vulkan.vk_physical_device_props;
 
 using namespace std::literals;
 

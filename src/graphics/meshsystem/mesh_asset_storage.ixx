@@ -1,9 +1,9 @@
-export module nekomata2.graphics.meshsystem.mesh_asset_storage;
+export module nekomata2:graphics.meshsystem.mesh_asset_storage;
 import std;
-import nekomata2.core.platform.int_def;
-import nekomata2.graphics.meshsystem.pool.mesh_pool;
-import nekomata2.core.containers.freelist_pool;
-import nekomata2.core.math;
+import :core.platform.int_def;
+import :graphics.meshsystem.pool.mesh_pool;
+import :core.containers.freelist_pool;
+import :core.math;
 
 export namespace nekomata2::meshsystem {
 class MeshAssetStorage;

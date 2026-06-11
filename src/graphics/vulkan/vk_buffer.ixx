@@ -1,9 +1,9 @@
-export module nekomata2.graphics.vulkan.vk_buffer;
+export module nekomata2:graphics.vulkan.vk_buffer;
 import std;
 import vulkan;
 import vk_mem_alloc;
-import nekomata2.core.platform.int_def;
-import nekomata2.graphics.vulkan.vk_gpu_obrm;
+import :core.platform.int_def;
+import :graphics.vulkan.vk_gpu_obrm;
 
 export namespace nekomata2 {
 

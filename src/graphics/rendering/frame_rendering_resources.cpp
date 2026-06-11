@@ -1,8 +1,11 @@
-module nekomata2.graphics.rendering.frame_rendering_resources;
+module;
+#include <string.h>
+module nekomata2;
 import vulkan;
 import vk_mem_alloc;
-import nekomata2.graphics.vulkan.context;
-import nekomata2.graphics.vulkan.vk_queue_family_swizzling;
+import :graphics.vulkan.context;
+import :graphics.vulkan.vk_queue_family_swizzling;
+import :graphics.rendering.frame_rendering_resources;
 
 namespace nekomata2::graphics {
 

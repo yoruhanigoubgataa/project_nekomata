@@ -1,5 +1,5 @@
-export module nekomata2.graphics.cmd_alloc;
-import nekomata2.graphics.vulkan.vk_commands;
+export module nekomata2:graphics.cmd_alloc;
+import :graphics.vulkan.vk_commands;
 
 export namespace nekomata2::cmdalloc {
 

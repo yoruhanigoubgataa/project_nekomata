@@ -1,10 +1,10 @@
-export module nekomata2.graphics.rendering.shared_rendering_resources;
-import nekomata2.core.platform.int_def;
-import nekomata2.graphics.meshsystem.mesh_asset_storage;
-import nekomata2.graphics.vulkan.vk_pipeline_layout;
-import nekomata2.graphics.vulkan.vk_pipeline_graphics;
-import nekomata2.graphics.fontsystem.font_face;
-import nekomata2.graphics.fontsystem.dynamic_font_atlas;
+export module nekomata2:graphics.rendering.shared_rendering_resources;
+import :core.platform.int_def;
+import :graphics.meshsystem.mesh_asset_storage;
+import :graphics.vulkan.vk_pipeline_layout;
+import :graphics.vulkan.vk_pipeline_graphics;
+import :graphics.fontsystem.font_face;
+import :graphics.fontsystem.dynamic_font_atlas;
 
 export namespace nekomata2::graphics {
 

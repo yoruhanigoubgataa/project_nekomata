@@ -1,6 +1,6 @@
-export module nekomata2.core.math.consts;
+export module nekomata2:core.math.consts;
 import std;
-import nekomata2.core.platform.int_def;
+import :core.platform.int_def;
 
 export namespace nekomata2::math::consts {
 

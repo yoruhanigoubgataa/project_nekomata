@@ -1,7 +1,7 @@
-export module nekomata2.graphics.vulkan.spv_shader_code;
+export module nekomata2:graphics.vulkan.spv_shader_code;
 import std;
 import vulkan;
-import nekomata2.core.platform.int_def;
+import :core.platform.int_def;
 
 export namespace nekomata2 {
 

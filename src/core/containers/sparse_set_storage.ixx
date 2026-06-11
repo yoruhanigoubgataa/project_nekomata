@@ -1,11 +1,12 @@
-export module nekomata2.core.containers.sparse_set_storage;
+export module nekomata2:core.containers.sparse_set_storage;
 import std;
+import :core.platform.int_def;
 
 export namespace nekomata2 {
 
 template<typename T> class SparseSetStorage {
 public:
-    const size_t INVALID_INDEX = std::numeric_limits<usize>::max();
+    const usize INVALID_INDEX = std::numeric_limits<usize>::max();
 
     auto allocate_one(const T& element) -> usize { return internal_allocate_one(element); }
     auto allocate_one(T&& element) -> usize { return internal_allocate_one(std::move(element)); }
@@ -31,7 +32,7 @@ public:
             std::swap(m_storage[storage_index], m_storage[last_storage_index]);
             std::swap(m_storage_to_index[storage_index], m_storage_to_index[last_storage_index]);
 
-            size_t moved_index = m_storage_to_index[storage_index];
+            usize moved_index = m_storage_to_index[storage_index];
             m_index_to_storage[moved_index] = storage_index;
         }
 
@@ -85,13 +86,11 @@ public:
     auto begin() const { return m_storage.begin(); }
     auto end() const { return m_storage.end(); }
 
-    const std::vector<T>& dense() const
-    {
+    const std::vector<T>& dense() const {
         return m_storage;
     }
 
-    const std::vector<size_t>& dense_indices() const
-    {
+    const std::vector<usize>& dense_indices() const {
         return m_storage_to_index;
     }
 private:

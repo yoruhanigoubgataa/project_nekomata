@@ -1,5 +1,5 @@
-export module nekomata2.graphics.vulkan.vk_gpu_obrm_structs;
-import nekomata2.core.platform.int_def;
+export module nekomata2:graphics.vulkan.vk_gpu_obrm_structs;
+import :core.platform.int_def;
 
 export namespace nekomata2 {
 

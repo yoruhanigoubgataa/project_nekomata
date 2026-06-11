@@ -1,8 +1,9 @@
-module nekomata2.graphics.rendering.transient_rendering_resources;
+module nekomata2;
 import vulkan;
 import vk_mem_alloc;
-import nekomata2.core.platform.int_def;
-import nekomata2.graphics.vulkan.context;
+import :core.platform.int_def;
+import :graphics.vulkan.context;
+import :graphics.rendering.transient_rendering_resources;
 
 namespace nekomata2::graphics {
 

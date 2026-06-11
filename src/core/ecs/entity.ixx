@@ -1,7 +1,6 @@
-export module nekomata2.core.ecs.entity;
+export module nekomata2:core.ecs.entity;
 import std;
-import nekomata2.core.platform.int_def;
-
+import :core.platform.int_def;
 
 export namespace nekomata2::ecs {
 

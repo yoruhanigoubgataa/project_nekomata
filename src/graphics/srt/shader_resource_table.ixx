@@ -1,11 +1,11 @@
-export module nekomata2.graphics.srt.shader_resource_table;
+export module nekomata2:graphics.srt.shader_resource_table;
 import std;
 import vulkan;
-import nekomata2.core.platform.int_def;
-import nekomata2.graphics.vulkan.vk_image;
-import nekomata2.graphics.vulkan.vk_sampler;
-import nekomata2.graphics.vulkan.vk_pipeline_layout;
-import nekomata2.graphics.vulkan.vk_commands;
+import :core.platform.int_def;
+import :graphics.vulkan.vk_image;
+import :graphics.vulkan.vk_sampler;
+import :graphics.vulkan.vk_pipeline_layout;
+import :graphics.vulkan.vk_commands;
 
 export namespace nekomata2::graphics::srt {
 

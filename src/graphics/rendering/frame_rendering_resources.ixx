@@ -1,13 +1,13 @@
-export module nekomata2.graphics.rendering.frame_rendering_resources;
+export module nekomata2:graphics.rendering.frame_rendering_resources;
 import std;
-import nekomata2.core.platform.int_def;
-import nekomata2.graphics.vulkan.vk_commands;
-import nekomata2.graphics.vulkan.vk_buffer;
-import nekomata2.graphics.vulkan.sync_primitives.fence;
-import nekomata2.graphics.vulkan.sync_primitives.binary_semaphore;
-import nekomata2.core.runtime.shared_data;
-import nekomata2.core.ecs.world.camera;
-import nekomata2.core.ecs.world.transform;
+import :core.platform.int_def;
+import :graphics.vulkan.vk_commands;
+import :graphics.vulkan.vk_buffer;
+import :graphics.vulkan.sync_primitives.fence;
+import :graphics.vulkan.sync_primitives.binary_semaphore;
+import :core.runtime.shared_data;
+import :core.ecs.world.camera;
+import :core.ecs.world.transform;
 
 export namespace nekomata2::graphics {
 

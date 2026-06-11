@@ -1,14 +1,14 @@
-export module nekomata2.core.runtime.mainthread;
+export module nekomata2:core.runtime.mainthread;
 import std;
-import nekomata2.core.platform.int_def;
-import nekomata2.core.runtime.shared_data;
-import nekomata2.graphics.vulkan.context;
-import nekomata2.core.platform.sdl;
-import nekomata2.core.ecs;
-import nekomata2.graphics.meshsystem.mesh_asset_storage;
-import nekomata2.graphics.texturesystem.texture_manager;
-import nekomata2.graphics.fontsystem.font_manager;
-import nekomata2.core.ui.ui_node;
+import :core.platform.int_def;
+import :core.runtime.shared_data;
+import :graphics.vulkan.context;
+import :core.platform.sdl;
+import :core.ecs;
+import :graphics.meshsystem.mesh_asset_storage;
+import :graphics.texturesystem.texture_manager;
+import :graphics.fontsystem.font_manager;
+import :core.ui.ui_node;
 
 export namespace nekomata2 {
 

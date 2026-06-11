@@ -1,8 +1,9 @@
-module nekomata2.graphics.rendering.shared_rendering_resources;
+module nekomata2;
 import vulkan;
-import nekomata2.graphics.texturesystem.texture_manager;
-import nekomata2.graphics.vulkan.spv_shader_code;
-import nekomata2.graphics.fontsystem.font_manager;
+import :graphics.texturesystem.texture_manager;
+import :graphics.vulkan.spv_shader_code;
+import :graphics.fontsystem.font_manager;
+import :graphics.rendering.shared_rendering_resources;
 
 namespace nekomata2::graphics {
 

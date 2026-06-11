@@ -1,11 +1,11 @@
-export module nekomata2.graphics.vulkan.vk_pipeline_graphics;
+export module nekomata2:graphics.vulkan.vk_pipeline_graphics;
 import std;
 import vulkan;
-import nekomata2.core.platform.int_def;
-import nekomata2.graphics.vulkan.vk_gpu_obrm;
-import nekomata2.graphics.vulkan.spv_shader_code;
-import nekomata2.graphics.vulkan.vk_pipeline_layout;
-import nekomata2.graphics.vulkan.context;
+import :core.platform.int_def;
+import :graphics.vulkan.vk_gpu_obrm;
+import :graphics.vulkan.spv_shader_code;
+import :graphics.vulkan.vk_pipeline_layout;
+import :graphics.vulkan.context;
 
 export namespace nekomata2 {
 

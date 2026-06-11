@@ -1,6 +1,6 @@
-module nekomata2.graphics.vulkan.deletion_queue;
-import nekomata2.graphics.vulkan.context;
-import nekomata2.core.platform.thread;
+module nekomata2;
+import :graphics.vulkan.context;
+import :core.platform.thread;
 
 namespace nekomata2 {
 
@@ -66,7 +66,7 @@ auto VulkanResourceDeletionQueue::workerRoutine() -> void {
                     .setValues(values);
 
                 // log::info(" ** Vulkan OBRM thread waiting:    current graphics = {}, async compute = {}, expected graphics = {}, async compute = {}", current_graphics_queue_retire_value, current_async_compute_queue_retire_value, obj->graphics_queue_retire_value, obj->async_compute_queue_retire_value);
-                VulkanContext::get().vkDevice().waitSemaphores(waitInfo, UINT64_MAX);
+                VulkanContext::get().vkDevice().waitSemaphores(waitInfo, std::numeric_limits<u64>::max());
 
 
                 currentGraphicsQueueRetireValue = graphicsQueueSemaphore.getCounterValue();

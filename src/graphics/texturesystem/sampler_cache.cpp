@@ -1,5 +1,5 @@
-module nekomata2.graphics.texturesystem.sampler_cache;
-import nekomata2.graphics.texturesystem.texture_manager;
+module nekomata2;
+import :graphics.texturesystem.texture_manager;
 
 namespace nekomata2::graphics::texturesystem {
 

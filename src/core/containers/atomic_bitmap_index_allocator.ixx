@@ -1,6 +1,6 @@
-export module nekomata2.core.containers.abia;
+export module nekomata2:core.containers.abia;
 import std;
-import nekomata2.core.platform.int_def;
+import :core.platform.int_def;
 
 export namespace nekomata2 {
 

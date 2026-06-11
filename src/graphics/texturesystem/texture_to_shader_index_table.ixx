@@ -1,6 +1,6 @@
-export module nekomata2.graphics.texturesystem.texture_to_sader_index_table;
+export module nekomata2:graphics.texturesystem.texture_to_shader_index_table;
 import std;
-import nekomata2.core.platform.int_def;
+import :core.platform.int_def;
 
 export namespace nekomata2::graphics::texturesystem {
 

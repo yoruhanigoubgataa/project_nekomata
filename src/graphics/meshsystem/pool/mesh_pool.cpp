@@ -1,4 +1,5 @@
-module nekomata2.graphics.meshsystem.pool.mesh_pool;
+module nekomata2;
+import :graphics.meshsystem.pool.mesh_pool;
 
 namespace nekomata2 {
 

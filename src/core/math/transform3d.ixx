@@ -1,6 +1,6 @@
-export module nekomata2.core.math.transform3d;
-import nekomata2.core.math.quaternion;
-import nekomata2.core.math.matrix_types;
+export module nekomata2:core.math.transform3d;
+import :core.math.quaternion;
+import :core.math.matrix_types;
 
 export namespace nekomata2::math {
     

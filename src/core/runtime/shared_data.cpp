@@ -1,4 +1,5 @@
-module nekomata2.core.runtime.shared_data;
+module nekomata2;
+import :core.runtime.shared_data;
 
 namespace nekomata2 {
 

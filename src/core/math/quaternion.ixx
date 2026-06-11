@@ -1,7 +1,7 @@
-export module nekomata2.core.math.quaternion;
+export module nekomata2:core.math.quaternion;
 import std;
-import nekomata2.core.math.matrix_types;
-import nekomata2.core.math.consts;
+import :core.math.matrix_types;
+import :core.math.consts;
 
 export namespace nekomata2::math {
 

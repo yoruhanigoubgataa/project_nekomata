@@ -1,9 +1,9 @@
-export module nekomata2.graphics.rendering.frame_context;
+export module nekomata2:graphics.rendering.frame_context;
 import std;
-import nekomata2.graphics.rendering.transient_rendering_resources;
-import nekomata2.graphics.rendering.shared_rendering_resources;
-import nekomata2.graphics.vulkan.vk_swapchain;
-import nekomata2.core.runtime.shared_data;
+import :graphics.rendering.transient_rendering_resources;
+import :graphics.rendering.shared_rendering_resources;
+import :graphics.vulkan.vk_swapchain;
+import :core.runtime.shared_data;
 
 export namespace nekomata2::graphics {
 

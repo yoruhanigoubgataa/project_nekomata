@@ -1,12 +1,12 @@
-export module nekomata2.core.ecs.component_pool;
+export module nekomata2:core.ecs.component_pool;
 import std;
-import nekomata2.core.ecs.entity;
-import nekomata2.core.platform.int_def;
-import nekomata2.core.platform.assert;
+import :core.ecs.entity;
+import :core.platform.int_def;
+import :core.platform.assert;
 
 export namespace nekomata2::ecs {
 
-static constexpr u32 INVALID_INDEX = 0xffffffff;
+constexpr u32 INVALID_INDEX = 0xffffffff;
 
 template <typename T> struct ComponentSetSnapshot {
     std::vector<T> m_storage;

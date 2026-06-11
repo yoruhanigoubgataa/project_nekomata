@@ -1,5 +1,6 @@
-module nekomata2.graphics.texturesystem.texture_to_sader_index_table;
-import nekomata2.core.platform.assert;
+module nekomata2;
+import :core.platform.assert;
+import :graphics.texturesystem.texture_to_shader_index_table;
 
 namespace nekomata2::graphics::texturesystem {
 

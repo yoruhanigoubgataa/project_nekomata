@@ -1,4 +1,4 @@
-export module nekomata2.graphics.vulkan.vk_image_trait;
+export module nekomata2:graphics.vulkan.vk_image_trait;
 import std;
 import vulkan;
 

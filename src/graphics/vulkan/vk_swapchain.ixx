@@ -1,10 +1,10 @@
-export module nekomata2.graphics.vulkan.vk_swapchain;
+export module nekomata2:graphics.vulkan.vk_swapchain;
 import std;
 import vulkan;
-import nekomata2.core.platform.int_def;
-import nekomata2.graphics.vulkan.vk_gpu_obrm;
-import nekomata2.graphics.vulkan.sync_primitives.binary_semaphore;
-import nekomata2.graphics.vulkan.vk_image_trait;
+import :core.platform.int_def;
+import :graphics.vulkan.vk_gpu_obrm;
+import :graphics.vulkan.sync_primitives.binary_semaphore;
+import :graphics.vulkan.vk_image_trait;
 
 export namespace nekomata2 {
 

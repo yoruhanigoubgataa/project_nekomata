@@ -4,7 +4,7 @@ module;
 #elif defined(__APPLE__) || defined(__linux__)
 #include <pthread.h>
 #endif
-export module nekomata2.core.platform.thread;
+export module nekomata2:core.platform.thread;
 import std;
 
 export namespace nekomata2 {

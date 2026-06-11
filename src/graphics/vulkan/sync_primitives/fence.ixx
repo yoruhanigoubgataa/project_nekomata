@@ -1,7 +1,7 @@
-export module nekomata2.graphics.vulkan.sync_primitives.fence;
+export module nekomata2:graphics.vulkan.sync_primitives.fence;
 import vulkan;
-import nekomata2.core.platform.int_def;
-import nekomata2.graphics.vulkan.vk_gpu_obrm;
+import :core.platform.int_def;
+import :graphics.vulkan.vk_gpu_obrm;
 
 export namespace nekomata2 {
 

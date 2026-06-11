@@ -1,5 +1,6 @@
-export module nekomata2.core.ui.components.ui_text;
-import nekomata2.graphics.fontsystem.font_face;
+export module nekomata2:core.ui.components.ui_text;
+import std;
+import :graphics.fontsystem.font_face;
 
 export namespace nekomata2::ui {
 

@@ -1,5 +1,6 @@
-module nekomata2.graphics.vulkan.vk_commands;
-import nekomata2.graphics.vulkan.context;
+module nekomata2;
+import :graphics.vulkan.context;
+import :graphics.vulkan.vk_commands;
 
 namespace nekomata2 {
 

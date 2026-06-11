@@ -1,5 +1,7 @@
-module nekomata2.graphics.vulkan.spv_shader_code;
-import nekomata2.core.log;
+module nekomata2;
+import :core.log;
+import :graphics.vulkan.spv_shader_code;
+import :core.platform.int_def;
 
 namespace nekomata2 {
 

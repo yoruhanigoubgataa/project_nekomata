@@ -208,21 +208,6 @@ target_link_libraries(
 target_compile_options(
         nekomata2 PRIVATE
 
-        -flto=thin
-        -fvisibility=hidden
-        -fvisibility-inlines-hidden
-        -fno-semantic-interposition
-        -fno-plt
-        -g
-
-        -ftls-model=local-exec
-
-        -fno-math-errno
-        -fno-trapping-math
-        -ffp-contract=fast
-
-        -fwrapv
-
         -Wall
         -Wextra
         -Wpedantic

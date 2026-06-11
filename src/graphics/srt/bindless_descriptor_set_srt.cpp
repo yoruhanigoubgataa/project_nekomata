@@ -1,5 +1,6 @@
-module nekomata2.graphics.srt.bindless_descriptor_set_srt;
-import nekomata2.core.log;
+module nekomata2;
+import :core.log;
+import :graphics.srt.bindless_descriptor_set_srt;
 
 namespace nekomata2::graphics::srt {
 

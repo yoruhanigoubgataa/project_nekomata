@@ -1,10 +1,10 @@
-export module nekomata2.graphics.vulkan.deletion_queue;
+export module nekomata2:graphics.vulkan.deletion_queue;
 import std;
 import vulkan;
 import vk_mem_alloc;
-import nekomata2.core.platform.int_def;
-import nekomata2.core.containers.mpsc_queue;
-import nekomata2.graphics.vulkan.vk_gpu_obrm_structs;
+import :core.platform.int_def;
+import :core.containers.mpsc_queue;
+import :graphics.vulkan.vk_gpu_obrm_structs;
 
 export namespace nekomata2 {
 

@@ -1,10 +1,10 @@
-export module nekomata2.graphics.vulkan.shadercache.pipeline_binary_frontend;
+export module nekomata2:graphics.vulkan.shadercache.pipeline_binary_frontend;
 import std;
 import vulkan;
-import nekomata2.core.log;
-import nekomata2.core.platform.int_def;
-import nekomata2.core.storage.sharded_hash_storage;
-import nekomata2.graphics.vulkan.context;
+import :core.log;
+import :core.platform.int_def;
+import :core.storage.sharded_hash_storage;
+import :graphics.vulkan.context;
 
 export namespace nekomata2 {
 

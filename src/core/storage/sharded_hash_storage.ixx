@@ -1,6 +1,6 @@
-export module nekomata2.core.storage.sharded_hash_storage;
+export module nekomata2:core.storage.sharded_hash_storage;
 import std;
-import nekomata2.core.platform.int_def;
+import :core.platform.int_def;
 
 export namespace nekomata2::storage {
 

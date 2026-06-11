@@ -1,7 +1,8 @@
-module nekomata2.graphics.meshsystem.mesh_asset_storage;
-import nekomata2.graphics.vulkan.context;
-import nekomata2.graphics.vulkan.vk_queue_family_swizzling;
-import nekomata2.core.platform.assert;
+module nekomata2;
+import :graphics.vulkan.context;
+import :graphics.vulkan.vk_queue_family_swizzling;
+import :core.platform.assert;
+import :graphics.meshsystem.mesh_asset_storage;
 
 namespace nekomata2::meshsystem {
 

@@ -1,8 +1,8 @@
-module nekomata2.graphics.vulkan.vk_swapchain;
-import nekomata2.core.log;
-import nekomata2.graphics.vulkan.vk_physical_device_props;
-import nekomata2.graphics.vulkan.context;
-import nekomata2.graphics.vulkan.vk_queue_family_swizzling;
+module nekomata2;
+import :core.log;
+import :graphics.vulkan.vk_physical_device_props;
+import :graphics.vulkan.context;
+import :graphics.vulkan.vk_queue_family_swizzling;
 
 namespace nekomata2 {
 

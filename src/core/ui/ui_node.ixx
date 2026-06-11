@@ -1,11 +1,11 @@
-export module nekomata2.core.ui.ui_node;
-import nekomata2.core.math;
-import nekomata2.core.log;
-import nekomata2.core.ui.components.ui_rect;
-import nekomata2.core.ui.components.ui_text;
-import nekomata2.core.ui.components.ui_texture;
-import nekomata2.core.overloaded;
-import nekomata2.core.ui.ui_drawcmds;
+export module nekomata2:core.ui.ui_node;
+import :core.math;
+import :core.log;
+import :core.ui.components.ui_rect;
+import :core.ui.components.ui_text;
+import :core.ui.components.ui_texture;
+import :core.overloaded;
+import :core.ui.ui_drawcmds;
 
 export namespace nekomata2::ui {
 

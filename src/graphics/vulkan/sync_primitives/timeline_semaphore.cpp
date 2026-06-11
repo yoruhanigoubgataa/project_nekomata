@@ -1,5 +1,6 @@
-module nekomata2.graphics.vulkan.sync_primitives.timeline_semaphore;
-import nekomata2.graphics.vulkan.context;
+module nekomata2;
+import :graphics.vulkan.context;
+import :graphics.vulkan.sync_primitives.timeline_semaphore;
 
 namespace nekomata2 {
 

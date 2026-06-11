@@ -1,5 +1,5 @@
-export module nekomata2.core.ecs.script_base;
-import nekomata2.core.ecs.entity;
+export module nekomata2:core.ecs.script_base;
+import :core.ecs.entity;
 
 export namespace nekomata2::ecs {
 

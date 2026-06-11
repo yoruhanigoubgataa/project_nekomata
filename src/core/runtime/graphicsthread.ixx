@@ -1,12 +1,12 @@
-export module nekomata2.core.runtime.graphicsthread;
+export module nekomata2:core.runtime.graphicsthread;
 import std;
 import vulkan;
-import nekomata2.core.platform.int_def;
-import nekomata2.core.runtime.shared_data;
-import nekomata2.graphics.vulkan.vk_swapchain;
-import nekomata2.graphics.rendering.transient_rendering_resources;
-import nekomata2.graphics.rendering.shared_rendering_resources;
-import nekomata2.graphics.rendering.frame_context;
+import :core.platform.int_def;
+import :core.runtime.shared_data;
+import :graphics.vulkan.vk_swapchain;
+import :graphics.rendering.transient_rendering_resources;
+import :graphics.rendering.shared_rendering_resources;
+import :graphics.rendering.frame_context;
 
 export namespace nekomata2 {
 

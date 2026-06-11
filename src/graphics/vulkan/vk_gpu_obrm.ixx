@@ -1,8 +1,8 @@
-export module nekomata2.graphics.vulkan.vk_gpu_obrm;
+export module nekomata2:graphics.vulkan.vk_gpu_obrm;
 import std;
 import vulkan;
-import nekomata2.graphics.vulkan.deletion_queue;
-import nekomata2.graphics.vulkan.vk_gpu_obrm_structs;
+import :graphics.vulkan.deletion_queue;
+import :graphics.vulkan.vk_gpu_obrm_structs;
 
 export namespace nekomata2 {
 

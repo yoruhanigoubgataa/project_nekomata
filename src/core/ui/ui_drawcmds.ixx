@@ -1,7 +1,7 @@
-export module nekomata2.core.ui.ui_drawcmds;
+export module nekomata2:core.ui.ui_drawcmds;
 import std;
-import nekomata2.core.math;
-import nekomata2.graphics.texturesystem.texture_manager;
+import :core.math;
+import :graphics.texturesystem.texture_manager;
 
 export namespace nekomata2::ui {
 

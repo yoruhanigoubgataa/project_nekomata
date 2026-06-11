@@ -1,12 +1,12 @@
-export module nekomata2.graphics.vulkan.vk_descriptor_set;
+export module nekomata2:graphics.vulkan.vk_descriptor_set;
 import std;
 import vulkan;
-import nekomata2.core.platform.int_def;
-import nekomata2.core.log;
-import nekomata2.graphics.vulkan.vk_gpu_obrm;
-import nekomata2.graphics.vulkan.vk_image;
-import nekomata2.graphics.vulkan.context;
-import nekomata2.graphics.vulkan.vk_sampler;
+import :core.platform.int_def;
+import :core.log;
+import :graphics.vulkan.vk_gpu_obrm;
+import :graphics.vulkan.vk_image;
+import :graphics.vulkan.context;
+import :graphics.vulkan.vk_sampler;
 
 export namespace nekomata2 {
 

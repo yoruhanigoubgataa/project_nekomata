@@ -1,9 +1,10 @@
-export module nekomata2.core.ecs;
+export module nekomata2:core.ecs;
 import std;
-export import nekomata2.core.ecs.component_pool;
-export import nekomata2.core.ecs.entity;
-export import nekomata2.core.ecs.script_base;
-import nekomata2.core.platform.int_def;
+export import :core.ecs.component_pool;
+export import :core.ecs.entity;
+export import :core.ecs.script_base;
+import :core.platform.int_def;
+import :core.platform.assert;
 
 export namespace nekomata2::ecs {
 
@@ -47,15 +48,15 @@ public:
     }
 
     bool isEntityValid(Entity ent) const {
-        uint32_t idx = ent.index();
+        u32 idx = ent.index();
         return idx < m_generations.size() && m_generations[idx] == ent.generation();
     }
 
     const std::vector<Entity>& entities() const { return m_aliveEntities; }
-    size_t entityCount() const { return m_aliveEntities.size(); }
+    usize entityCount() const { return m_aliveEntities.size(); }
 
     template <typename T, typename... Args> T& emplace(Entity e, Args&&... args) {
-        assert(isEntityValid(e));
+        debug_assert(isEntityValid(e), "attempted to add component to entity that does not exist");
         return components<T>().emplace(e, std::forward<Args>(args)...);
     }
 
@@ -95,7 +96,7 @@ public:
     // The given script must derive from ScriptBase.
     template <typename ScriptType, typename... Args> ScriptType& addScript(Entity e, Args&&... args) {
         static_assert(std::is_base_of_v<ScriptBase, ScriptType>, "S must derive from ScriptBase");
-        assert(isEntityValid(e));
+        debug_assert(isEntityValid(e), "attempted to add script to entity that does not exist");
 
         auto s = std::make_unique<ScriptType>(std::forward<Args>(args)...);
         s->m_workingEntity = e;

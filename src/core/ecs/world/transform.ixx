@@ -1,5 +1,5 @@
-export module nekomata2.core.ecs.world.transform;
-import nekomata2.core.math;
+export module nekomata2:core.ecs.world.transform;
+import :core.math;
 
 using namespace nekomata2::math;
 

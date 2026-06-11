@@ -1,4 +1,5 @@
-module nekomata2.graphics.vulkan.vk_pipeline_layout;
+module nekomata2;
+import :graphics.vulkan.vk_pipeline_layout;
 
 namespace nekomata2 {
 

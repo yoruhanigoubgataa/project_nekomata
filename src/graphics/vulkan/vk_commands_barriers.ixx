@@ -1,7 +1,8 @@
-export module nekomata2.graphics.vulkan.vk_commands_barriers;
+export module nekomata2:graphics.vulkan.vk_commands_barriers;
 import std;
 import vulkan;
-import nekomata2.graphics.vulkan.vk_image_trait;
+import :graphics.vulkan.vk_image_trait;
+import :graphics.vulkan.vk_commands;
 
 export namespace nekomata2 {
 

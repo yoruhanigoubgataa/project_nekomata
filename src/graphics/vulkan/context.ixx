@@ -1,13 +1,11 @@
-export module nekomata2.graphics.vulkan.context;
+export module nekomata2:graphics.vulkan.context;
 import std;
 import vulkan;
 import vk_mem_alloc;
-import nekomata2.core.platform.int_def;
-import nekomata2.core.platform.sdl;
-import nekomata2.graphics.vulkan.vk_physical_device_props;
-import nekomata2.graphics.vulkan.vk_queue;
-import nekomata2.graphics.vulkan.deletion_queue;
-import nekomata2.graphics.vulkan.shadercache;
+import :core.platform.int_def;
+import :core.platform.sdl;
+import :graphics.vulkan.vk_physical_device_props;
+import :graphics.vulkan.vk_queue;
 
 export namespace nekomata2 {
 
@@ -36,7 +34,7 @@ public:
     [[nodiscard]] auto vkQueuePresent() const -> VulkanQueue& { return *m_vkPresentQueue; }
 
     [[nodiscard]] auto vkDeletionQueue() -> std::unique_ptr<VulkanResourceDeletionQueue>& { return m_vkResourceDeletionQueue; }
-    [[nodiscard]] auto shaderCache() -> std::unique_ptr<ShaderCache>& { return m_shaderCache; }
+    [[nodiscard]] auto shaderCache() -> std::unique_ptr<class ShaderCache>& { return m_shaderCache; }
 
     auto antiLagPaceInput(u64 frameIndex, u32 targetFps) -> void;
     auto antiLagPacePresent(u64 frameIndex, u32 targetFps) -> void;
@@ -72,8 +70,8 @@ private:
 
     vma::raii::Allocator m_vmaAllocator = nullptr;
 
-    std::unique_ptr<VulkanResourceDeletionQueue> m_vkResourceDeletionQueue;
-    std::unique_ptr<ShaderCache> m_shaderCache;
+    std::unique_ptr<class VulkanResourceDeletionQueue> m_vkResourceDeletionQueue;
+    std::unique_ptr<class ShaderCache> m_shaderCache;
 
     bool m_antilagEnable = true;
 };

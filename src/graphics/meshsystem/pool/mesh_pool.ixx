@@ -1,9 +1,9 @@
-export module nekomata2.graphics.meshsystem.pool.mesh_pool;
+export module nekomata2:graphics.meshsystem.pool.mesh_pool;
 import std;
 import vulkan;
 import vk_mem_alloc;
-import nekomata2.core.platform.int_def;
-import nekomata2.graphics.vulkan.vk_buffer;
+import :core.platform.int_def;
+import :graphics.vulkan.vk_buffer;
 
 export namespace nekomata2 {
 

@@ -1,4 +1,6 @@
-export module nekomata2.core.log;
+module;
+#include <ctime>
+export module nekomata2:core.log;
 import std;
 
 export namespace nekomata2::log {

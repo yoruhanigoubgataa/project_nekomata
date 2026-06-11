@@ -1,11 +1,11 @@
-export module nekomata2.graphics.vulkan.vk_image;
+export module nekomata2:graphics.vulkan.vk_image;
 import std;
 import vulkan;
 import vk_mem_alloc;
-import nekomata2.core.platform.int_def;
-import nekomata2.graphics.vulkan.vk_image_view;
-import nekomata2.graphics.vulkan.vk_gpu_obrm;
-import nekomata2.graphics.vulkan.vk_image_trait;
+import :core.platform.int_def;
+import :graphics.vulkan.vk_image_view;
+import :graphics.vulkan.vk_gpu_obrm;
+import :graphics.vulkan.vk_image_trait;
 
 export namespace nekomata2 {
 

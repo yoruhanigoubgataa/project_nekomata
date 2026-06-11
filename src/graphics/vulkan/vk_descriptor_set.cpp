@@ -1,4 +1,5 @@
-module nekomata2.graphics.vulkan.vk_descriptor_set;
+module nekomata2;
+import :graphics.vulkan.vk_descriptor_set;
 
 namespace nekomata2 {
 

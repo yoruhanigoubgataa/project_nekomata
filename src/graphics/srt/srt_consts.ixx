@@ -1,5 +1,5 @@
-export module nekomata2.graphics.srt.srt_consts;
-import nekomata2.core.platform.int_def;
+export module nekomata2:graphics.srt.srt_consts;
+import :core.platform.int_def;
 
 export namespace nekomata2::graphics::srt {
 

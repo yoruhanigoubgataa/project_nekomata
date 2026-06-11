@@ -1,6 +1,6 @@
-export module nekomata2.graphics.vulkan.vk_image_view;
+export module nekomata2:graphics.vulkan.vk_image_view;
 import vulkan;
-import nekomata2.graphics.vulkan.vk_gpu_obrm;
+import :graphics.vulkan.vk_gpu_obrm;
 
 export namespace nekomata2 {
 

@@ -1,5 +1,5 @@
-module nekomata2.graphics.vulkan.vk_gpu_obrm_structs;
-import nekomata2.graphics.vulkan.context;
+module nekomata2;
+import :graphics.vulkan.context;
 
 namespace nekomata2 {
 

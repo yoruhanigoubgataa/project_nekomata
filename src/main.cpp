@@ -1,14 +1,6 @@
 import std;
-import nekomata2.core.platform.int_def;
-import nekomata2.core.math;
-import nekomata2.core.log;
-import nekomata2.core.ecs;
-import nekomata2.core.ecs.world.transform;
-import nekomata2.core.ecs.world.renderable;
-import nekomata2.core.runtime.entry;
-import nekomata2.core.ecs.world.camera;
-import nekomata2.graphics.texturesystem.texture_manager;
-import nekomata2.graphics.meshsystem.mesh_asset_storage;
+import nekomata2;
+#include <string.h>
 
 using namespace nekomata2::math;
 

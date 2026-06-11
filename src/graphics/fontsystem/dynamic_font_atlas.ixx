@@ -1,16 +1,16 @@
 module;
 #include <xxhash.h>
-export module nekomata2.graphics.fontsystem.dynamic_font_atlas;
+export module nekomata2:graphics.fontsystem.dynamic_font_atlas;
 import std;
 import vulkan;
 import vk_mem_alloc;
-import nekomata2.core.platform.int_def;
-import nekomata2.core.math;
-import nekomata2.graphics.fontsystem.font_face;
-import nekomata2.graphics.vulkan.vk_image;
-import nekomata2.graphics.texturesystem.texture_manager;
-import nekomata2.graphics.vulkan.vk_queue_family_swizzling;
-import nekomata2.graphics.vulkan.context;
+import :core.platform.int_def;
+import :core.math;
+import :graphics.fontsystem.font_face;
+import :graphics.vulkan.vk_image;
+import :graphics.texturesystem.texture_manager;
+import :graphics.vulkan.vk_queue_family_swizzling;
+import :graphics.vulkan.context;
 
 export namespace nekomata2::graphics::rendering {
 

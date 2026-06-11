@@ -1,7 +1,7 @@
-module nekomata2.graphics.vulkan.vk_queue;
+module nekomata2;
 import std;
 import vulkan;
-import nekomata2.graphics.vulkan.context;
+import :graphics.vulkan.context;
 
 namespace nekomata2 {
 

@@ -1,6 +1,7 @@
-export module nekomata2.core.containers.freelist_pool;
+export module nekomata2:core.containers.freelist_pool;
 import std;
-import nekomata2.core.platform.int_def;
+import :core.platform.int_def;
+import :core.platform.assert;
 
 export namespace nekomata2 {
 
@@ -33,7 +34,7 @@ public:
             m_freelistHead = getNodeByIndex(index).nextFree;
         } else {
             // No indices in freelist. Need to get a new node.
-            assert(m_allocatedNodesCount < MaxChunks * kChunkSize && "FreelistPool exceeded max capacity");
+            debug_assert(m_allocatedNodesCount < MaxChunks * kChunkSize, "FreelistPool exceeded max capacity");
             index = static_cast<Index>(m_allocatedNodesCount);
             usize pageIdx = index >> ChunkSizePwr;
 

@@ -1,4 +1,4 @@
-export module nekomata2.core.overloaded;
+export module nekomata2:core.overloaded;
 
 export namespace nekomata2 {
 

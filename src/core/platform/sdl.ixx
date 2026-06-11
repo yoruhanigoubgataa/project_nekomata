@@ -1,10 +1,10 @@
 module;
 #include <SDL3/SDL.h>
-export module nekomata2.core.platform.sdl;
+export module nekomata2:core.platform.sdl;
 import std;
 import vulkan;
-import nekomata2.core.math;
-import nekomata2.core.platform.int_def;
+import :core.math;
+import :core.platform.int_def;
 
 export namespace nekomata2 {
 

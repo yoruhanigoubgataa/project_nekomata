@@ -1,12 +1,12 @@
-export module nekomata2.core.runtime.shared_data;
+export module nekomata2:core.runtime.shared_data;
 import std;
 import vulkan;
-import nekomata2.core.platform.int_def;
-import nekomata2.core.ecs.component_pool;
-import nekomata2.core.ecs.world.camera;
-import nekomata2.core.ecs.world.transform;
-import nekomata2.core.ecs.world.renderable;
-import nekomata2.core.containers.double_buffer;
+import :core.platform.int_def;
+import :core.ecs.component_pool;
+import :core.ecs.world.camera;
+import :core.ecs.world.transform;
+import :core.ecs.world.renderable;
+import :core.containers.double_buffer;
 
 export namespace nekomata2 {
 

@@ -1,20 +1,23 @@
-module nekomata2.graphics.rendering.frame_context;
+module;
+#include <string.h>
+module nekomata2;
 import vulkan;
 import vk_mem_alloc;
-import nekomata2.core.log;
-import nekomata2.core.platform.int_def;
-import nekomata2.graphics.rendering.frame_rendering_resources;
-import nekomata2.core.ecs.world.camera;
-import nekomata2.core.ecs.world.transform;
-import nekomata2.graphics.fontsystem.font_manager;
-import nekomata2.graphics.vulkan.vk_buffer;
-import nekomata2.graphics.meshsystem.mesh_asset_storage;
-import nekomata2.core.ui.ui_drawcmds;
-import nekomata2.graphics.vulkan.context;
-import nekomata2.graphics.texturesystem.texture_manager;
-import nekomata2.graphics.vulkan.vk_commands_barriers;
-import nekomata2.core.ecs.entity;
-import nekomata2.core.overloaded;
+import :core.log;
+import :core.platform.int_def;
+import :graphics.rendering.frame_rendering_resources;
+import :core.ecs.world.camera;
+import :core.ecs.world.transform;
+import :graphics.fontsystem.font_manager;
+import :graphics.vulkan.vk_buffer;
+import :graphics.meshsystem.mesh_asset_storage;
+import :core.ui.ui_drawcmds;
+import :graphics.vulkan.context;
+import :graphics.texturesystem.texture_manager;
+import :graphics.vulkan.vk_commands_barriers;
+import :core.ecs.entity;
+import :core.overloaded;
+import :graphics.rendering.frame_context;
 
 namespace nekomata2::graphics {
 
@@ -27,16 +30,16 @@ FrameContext::FrameContext() {
 
 inline vk::Offset3D toOffset3D(const vk::Extent3D& extent) {
     return vk::Offset3D{
-        static_cast<int32_t>(extent.width),
-        static_cast<int32_t>(extent.height),
-        static_cast<int32_t>(extent.depth)
+        static_cast<i32>(extent.width),
+        static_cast<i32>(extent.height),
+        static_cast<i32>(extent.depth)
     };
 }
 
 auto FrameContext::execute(TransientRenderingResources& transientRenderingResources, SharedRenderingResources& sharedRenderingResources, VulkanSwapchain& swapchain, MRThreadsSharedDataLeaf& renderingData, float timeSinceStart) -> FrameResult {
-    m_frameRenderingResources.frameDoneFence().waitForSignal(UINT64_MAX);
+    m_frameRenderingResources.frameDoneFence().waitForSignal(std::numeric_limits<u64>::max());
 
-    auto imageAcquire = swapchain.acquireNextImage(UINT64_MAX, m_frameRenderingResources.imageAcquiredSemaphore());
+    auto imageAcquire = swapchain.acquireNextImage(std::numeric_limits<u64>::max(), m_frameRenderingResources.imageAcquiredSemaphore());
 
     if (!imageAcquire.first.has_value() || imageAcquire.second) {
         return { .shouldRecreateSwapchain = true, .stepPerFrameResources = false };

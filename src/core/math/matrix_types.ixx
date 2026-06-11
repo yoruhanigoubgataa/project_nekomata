@@ -1,5 +1,5 @@
-export module nekomata2.core.math.matrix_types;
-import nekomata2.core.math.base_matrix;
+export module nekomata2:core.math.matrix_types;
+import :core.math.base_matrix;
 
 export namespace nekomata2::math {
 

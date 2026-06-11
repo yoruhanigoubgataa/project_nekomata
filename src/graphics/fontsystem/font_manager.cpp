@@ -1,10 +1,11 @@
 module;
 #include <freetype/freetype.h>
 #include <utf8cpp/utf8.h>
-module nekomata2.graphics.fontsystem.font_manager;
-import nekomata2.core.log;
-import nekomata2.core.platform.assert;
-import nekomata2.graphics.fontsystem.dynamic_font_atlas;
+module nekomata2;
+import :core.log;
+import :core.platform.assert;
+import :graphics.fontsystem.dynamic_font_atlas;
+import :graphics.fontsystem.font_manager;
 
 namespace nekomata2::graphics::fonts {
 

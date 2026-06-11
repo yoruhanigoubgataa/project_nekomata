@@ -1,5 +1,5 @@
-export module nekomata2.core.ui.components.ui_rect;
-import nekomata2.core.math;
+export module nekomata2:core.ui.components.ui_rect;
+import :core.math;
 
 export namespace nekomata2::ui {
 
