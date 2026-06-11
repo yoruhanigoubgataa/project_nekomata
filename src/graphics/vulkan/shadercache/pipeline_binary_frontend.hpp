@@ -107,7 +107,6 @@ public:
         chain.template get<vk::PipelineBinaryInfoKHR>()
             .setPipelineBinaries(binaryHandles);
 
-        log::info("Pipeline cache hit, using pipeline binaries to create pipeline");
         return VulkanContext::get().vkDevice().createGraphicsPipeline(nullptr, chain.template get<vk::GraphicsPipelineCreateInfo>());
     }
 
