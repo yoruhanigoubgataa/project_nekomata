@@ -84,7 +84,7 @@ endif()
 # ----------------------------------------------------------------------------------------------------------------------
 #     Vulkan and VMA Modules
 
-add_library(VulkanModule)
+add_library(VulkanModule STATIC)
 target_compile_definitions(
         VulkanModule PUBLIC
         VULKAN_HPP_DISPATCH_LOADER_DYNAMIC=1
