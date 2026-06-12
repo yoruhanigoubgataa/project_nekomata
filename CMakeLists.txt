@@ -97,6 +97,9 @@ target_sources(VulkanModule
         FILES
         ${Vulkan_INCLUDE_DIRS}/vulkan/vulkan.cppm
 )
+set_target_properties(VulkanModule PROPERTIES
+        CXX_SCAN_FOR_MODULES ON
+)
 
 # ----------------------------------------------------------------------------------------------------------------------
 #     Slang Setup
